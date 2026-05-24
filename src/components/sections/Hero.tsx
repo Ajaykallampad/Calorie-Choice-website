@@ -17,7 +17,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex flex-col gap-6 relative z-10"
+            className="flex flex-col items-center text-center lg:items-start lg:text-left gap-6 relative z-10"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-wellness/10 border border-green-wellness/30 text-green-forest w-fit text-xs md:text-sm font-semibold tracking-wide shadow-[0_2px_10px_rgba(140,203,24,0.1)] backdrop-blur-sm">
               <span className="relative flex h-2 w-2">
@@ -33,41 +33,22 @@ export function Hero() {
               Perfectly Balanced.
             </h1>
             
-            <div className="text-base md:text-lg text-gray-600 max-w-xl leading-[1.8] font-medium space-y-5 text-left">
+            <div className="text-base md:text-lg text-gray-600 max-w-xl leading-[1.8] font-medium space-y-4">
               <p>
-                In a world of processed fast foods and unhealthy eating habits, we often overlook the importance of whole foods and healthy nutrition.
+                We craft meals packed with the perfect balance of <strong className="text-green-forest">macros, vitamins, and minerals</strong> — real food that truly fuels your body. From weight loss to wellness-focused nutrition, every bite is made with purpose and personalized for you.
               </p>
               
-              <p>
-                We craft meals packed with the right balance of <strong className="text-green-forest">macros, micros, vitamins, and minerals</strong> — real food that truly fuels your body and soul.
-              </p>
-              
-              <ul className="space-y-3 py-1">
-                <li className="flex items-start gap-3">
-                  <div className="mt-1 w-5 h-5 rounded-full bg-green-wellness/30 flex items-center justify-center shrink-0">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-green-forest" />
-                  </div>
-                  <span>From weight loss and muscle gain to wellness-focused nutrition.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="mt-1 w-5 h-5 rounded-full bg-green-wellness/30 flex items-center justify-center shrink-0">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-green-forest" />
-                  </div>
-                  <span>Every bite is made with purpose and personalized for you.</span>
-                </li>
-              </ul>
-              
-              <div className="pl-4 py-1 border-l-4 border-green-leaf/50 text-gray-800 italic font-semibold">
-                "Healthy never means boring — because great nutrition should taste just as good as it feels."
+              <div className="italic text-gray-800 font-semibold lg:border-l-4 lg:border-green-leaf/50 lg:pl-4 mt-2 lg:mt-0 py-1">
+                "Because great nutrition should taste just as good as it feels."
               </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 pt-2">
+            <div className="flex flex-col w-full sm:w-auto sm:flex-row justify-center lg:justify-start gap-4 pt-2">
               <Button variant="cta" size="lg" className="w-full sm:w-auto shadow-[0_4px_20px_rgba(66,196,90,0.4)] hover:shadow-[0_4px_25px_rgba(66,196,90,0.6)] hover:-translate-y-1 transition-all">Order Healthy Meals</Button>
               <Button variant="outline" size="lg" className="w-full sm:w-auto bg-white/50 backdrop-blur-sm hover:bg-white hover:-translate-y-1 transition-all border-gray-border/80">Subscribe & Save</Button>
             </div>
             
-            <div className="flex items-center gap-6 pt-6">
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-6 pt-6">
               <div className="flex flex-col">
                 <div className="flex items-center gap-1 text-yellow-400">
                   <Star fill="currentColor" size={16} />
