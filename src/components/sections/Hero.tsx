@@ -35,7 +35,7 @@ export function Hero() {
             
             <div className="text-base md:text-lg text-gray-600 max-w-xl leading-[1.8] font-medium space-y-4">
               <p>
-                We craft meals packed with the perfect balance of <strong className="text-green-forest">macros, vitamins, and minerals</strong> — real food that truly fuels your body. From weight loss to wellness-focused nutrition, every bite is made with purpose and personalized for you.
+                In a world of processed fast foods and unhealthy eating habits, we often overlook the importance of whole foods and healthy nutrition. We craft meals packed with the right balance of <strong className="text-green-forest">macros, micros, vitamins, and minerals</strong> — real food that truly fuels your body and soul. From weight loss and muscle gain to wellness-focused nutrition, every bite is made with purpose and personalized for you.
               </p>
               
               <div className="italic text-gray-800 font-semibold lg:border-l-4 lg:border-green-leaf/50 lg:pl-4 mt-2 lg:mt-0 py-1">
@@ -48,25 +48,7 @@ export function Hero() {
               <Button variant="outline" size="lg" className="w-full sm:w-auto bg-white/50 backdrop-blur-sm hover:bg-white hover:-translate-y-1 transition-all border-gray-border/80">Subscribe & Save</Button>
             </div>
             
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-6 pt-6">
-              <div className="flex flex-col">
-                <div className="flex items-center gap-1 text-yellow-400">
-                  <Star fill="currentColor" size={16} />
-                  <Star fill="currentColor" size={16} />
-                  <Star fill="currentColor" size={16} />
-                  <Star fill="currentColor" size={16} />
-                  <Star fill="currentColor" size={16} />
-                </div>
-                <p className="text-sm font-semibold text-gray-700 mt-1">1000+ Happy Customers</p>
-              </div>
-              <div className="h-10 w-px bg-gray-border"></div>
-              <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
-                <div className="w-8 h-8 rounded-full bg-green-wellness/20 flex items-center justify-center">
-                  <ShieldCheck className="text-green-forest" size={18} />
-                </div>
-                Nutritionist Designed
-              </div>
-            </div>
+
           </motion.div>
 
           <motion.div
