@@ -65,15 +65,7 @@ export function Loader({ onLoadingComplete }: { onLoadingComplete: () => void })
           <img src="/logo.png" alt="Calorie Choice Logo" className="w-56 h-56 sm:w-72 sm:h-72 object-contain" />
         </motion.div>
         
-        {/* Loading text */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.5 }}
-          className="absolute -bottom-24 text-primary font-heading font-semibold text-sm tracking-[0.2em] uppercase"
-        >
-          <span className="animate-pulse">Curating your nutrition...</span>
-        </motion.div>
+        {/* Loading text removed */}
       </div>
     </motion.div>
   );

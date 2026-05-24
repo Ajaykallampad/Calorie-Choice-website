@@ -24,7 +24,7 @@ export function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-leaf opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-leaf"></span>
               </span>
-              🌿 PALAKKAD’S #1 HEALTHY CLOUD KITCHEN
+              🌿 PALAKKAD’S #1 HEALTHY CHOICE
             </div>
             
             <h1 className="font-heading font-bold text-5xl md:text-6xl lg:text-[72px] leading-[1.05] tracking-tight text-primary drop-shadow-sm">
@@ -34,7 +34,7 @@ export function Hero() {
             </h1>
             
             <p className="text-base md:text-lg text-gray-600 max-w-xl leading-[1.8] font-medium">
-              In a world where unhealthy eating silently steals your energy and wellness, we’re here to spark a healthier revolution. We craft nutritionist-approved meals packed with the right balance of macros, micros, vitamins, and minerals — real food that truly fuels your body and soul. From weight loss and muscle gain to disease-focused nutrition, every meal is designed with purpose, and fully customizable to fit your lifestyle.
+              In a world of processed fast foods and unhealthy eating habits, we often overlook the importance of whole foods and healthy nutrition. We craft meals packed with the right balance of macros, micros, vitamins, and minerals — real food that truly fuels your body and soul. From weight loss and muscle gain to wellness-focused nutrition, every bite is made with purpose and personalized for you. Healthy never means boring — because great nutrition should taste just as good as it feels.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
