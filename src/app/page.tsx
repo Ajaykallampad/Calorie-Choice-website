@@ -22,6 +22,7 @@ export default function Home() {
       <MealPlansPreview />
       <NutritionTeaser />
       <Footer />
-    </main>
+      </main>
+    </>
   );
 }
