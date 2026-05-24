@@ -59,10 +59,10 @@ export function Loader({ onLoadingComplete }: { onLoadingComplete: () => void })
           initial={{ opacity: 0, y: 20, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative z-10"
+          className="relative z-10 mix-blend-multiply"
         >
           {/* We use a standard img tag here since image optimization is disabled for static export */}
-          <img src="/logo.png" alt="Calorie Choice Logo" className="w-56 h-56 sm:w-72 sm:h-72 object-contain mix-blend-multiply" />
+          <img src="/logo.png" alt="Calorie Choice Logo" className="w-56 h-56 sm:w-72 sm:h-72 object-contain" />
         </motion.div>
         
         {/* Loading text */}
