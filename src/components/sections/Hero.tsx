@@ -33,9 +33,34 @@ export function Hero() {
               Perfectly Balanced.
             </h1>
             
-            <p className="text-base md:text-lg text-gray-600 max-w-xl leading-[1.8] font-medium">
-              In a world of processed fast foods and unhealthy eating habits, we often overlook the importance of whole foods and healthy nutrition. We craft meals packed with the right balance of macros, micros, vitamins, and minerals — real food that truly fuels your body and soul. From weight loss and muscle gain to wellness-focused nutrition, every bite is made with purpose and personalized for you. Healthy never means boring — because great nutrition should taste just as good as it feels.
-            </p>
+            <div className="text-base md:text-lg text-gray-600 max-w-xl leading-[1.8] font-medium space-y-5 text-left">
+              <p>
+                In a world of processed fast foods and unhealthy eating habits, we often overlook the importance of whole foods and healthy nutrition.
+              </p>
+              
+              <p>
+                We craft meals packed with the right balance of <strong className="text-green-forest">macros, micros, vitamins, and minerals</strong> — real food that truly fuels your body and soul.
+              </p>
+              
+              <ul className="space-y-3 py-1">
+                <li className="flex items-start gap-3">
+                  <div className="mt-1 w-5 h-5 rounded-full bg-green-wellness/30 flex items-center justify-center shrink-0">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-green-forest" />
+                  </div>
+                  <span>From weight loss and muscle gain to wellness-focused nutrition.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="mt-1 w-5 h-5 rounded-full bg-green-wellness/30 flex items-center justify-center shrink-0">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-green-forest" />
+                  </div>
+                  <span>Every bite is made with purpose and personalized for you.</span>
+                </li>
+              </ul>
+              
+              <div className="pl-4 py-1 border-l-4 border-green-leaf/50 text-gray-800 italic font-semibold">
+                "Healthy never means boring — because great nutrition should taste just as good as it feels."
+              </div>
+            </div>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <Button variant="cta" size="lg" className="w-full sm:w-auto shadow-[0_4px_20px_rgba(66,196,90,0.4)] hover:shadow-[0_4px_25px_rgba(66,196,90,0.6)] hover:-translate-y-1 transition-all">Order Healthy Meals</Button>
