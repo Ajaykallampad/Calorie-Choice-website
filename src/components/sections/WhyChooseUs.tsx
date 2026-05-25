@@ -290,7 +290,7 @@ export function WhyChooseUs() {
       </div>
 
       {/* Endless Swipeable Horizontal Marquee Carousel */}
-      <div className="w-full relative overflow-hidden py-10 z-20 group">
+      <div className="w-full relative overflow-hidden py-10 z-20">
         {/* Gradient Masks for edges */}
         <div className="absolute left-0 top-0 bottom-0 w-16 md:w-48 bg-gradient-to-r from-[#F7F8FA] to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-16 md:w-48 bg-gradient-to-l from-[#F7F8FA] to-transparent z-10 pointer-events-none" />
