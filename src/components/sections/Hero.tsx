@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Button } from "../ui/Button";
+import { NutrientCarousel } from "../ui/NutrientCarousel";
 import { CheckCircle2, ShieldCheck, Star } from "lucide-react";
 
 export function Hero() {
@@ -57,57 +58,10 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
             className="relative h-[450px] sm:h-[550px] lg:h-[650px] w-full flex items-center justify-center mt-8 lg:mt-0"
           >
-            {/* Logo showcase */}
+            {/* Premium 3D Nutrient Carousel */}
             <div className="relative w-full h-full flex items-center justify-center">
-              {/* Outer glowing rings */}
-              <motion.div 
-                animate={{ rotate: 360 }}
-                transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-                className="absolute w-[300px] h-[300px] sm:w-[450px] sm:h-[450px] rounded-full border border-green-wellness/20 border-dashed"
-              />
-              <motion.div 
-                animate={{ rotate: -360 }}
-                transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
-                className="absolute w-[350px] h-[350px] sm:w-[550px] sm:h-[550px] rounded-full border border-primary/10 border-dotted"
-              />
-              
-              <motion.div 
-                animate={{ y: [-15, 15, -15] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                className="relative z-10 w-3/4 max-w-[400px]"
-              >
-                <img src="/logo.png" alt="Calorie Choice" className="w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)]" />
-              </motion.div>
+              <NutrientCarousel />
             </div>
-
-            {/* Floating Widgets */}
-            <motion.div 
-              animate={{ y: [-10, 10, -10] }} 
-              transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              className="absolute top-10 right-0 sm:right-10 glass p-3 sm:p-4 rounded-2xl shadow-xl flex items-center gap-3 sm:gap-4 border border-white/60 bg-white/70 backdrop-blur-md hover:scale-105 transition-transform"
-            >
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-primary flex items-center justify-center text-white font-bold shadow-glow">
-                35g
-              </div>
-              <div>
-                <p className="text-[10px] sm:text-xs text-primary font-bold uppercase tracking-wider">Protein Target</p>
-                <p className="text-xs sm:text-sm font-bold text-foreground">On Track! 🎯</p>
-              </div>
-            </motion.div>
-
-            <motion.div 
-              animate={{ y: [10, -10, 10] }} 
-              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-              className="absolute bottom-20 left-0 sm:left-4 glass p-3 sm:p-4 rounded-2xl shadow-xl flex items-center gap-3 border border-white/60 bg-white/70 backdrop-blur-md hover:scale-105 transition-transform"
-            >
-              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-green-wellness/20 flex items-center justify-center">
-                <CheckCircle2 className="text-green-forest" size={20} />
-              </div>
-              <div>
-                <p className="text-xs sm:text-sm font-bold text-foreground">Hygienic Kitchen</p>
-                <p className="text-[10px] sm:text-xs text-gray-500 font-medium">FSSAI Certified</p>
-              </div>
-            </motion.div>
 
           </motion.div>
         </div>
