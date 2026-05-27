@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Button } from "../ui/Button";
 import { NutrientCarousel } from "../ui/NutrientCarousel";
 import { CheckCircle2, ShieldCheck, Star } from "lucide-react";
@@ -45,8 +46,12 @@ export function Hero() {
             </div>
             
             <div className="flex flex-col w-full sm:w-auto sm:flex-row justify-center lg:justify-start gap-4 pt-2">
-              <Button variant="cta" size="lg" className="w-full sm:w-auto shadow-[0_4px_20px_rgba(66,196,90,0.4)] hover:shadow-[0_4px_25px_rgba(66,196,90,0.6)] hover:-translate-y-1 transition-all">Order Healthy Meals</Button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto bg-white/50 backdrop-blur-sm hover:bg-white hover:-translate-y-1 transition-all border-gray-border/80">Subscribe & Save</Button>
+              <Link href="#meal-plans" className="w-full sm:w-auto">
+                <Button variant="cta" size="lg" className="w-full shadow-[0_4px_20px_rgba(66,196,90,0.4)] hover:shadow-[0_4px_25px_rgba(66,196,90,0.6)] hover:-translate-y-1 transition-all">Order Healthy Meals</Button>
+              </Link>
+              <Link href="#contact-us" className="w-full sm:w-auto">
+                <Button variant="primary" size="lg" className="w-full shadow-[0_4px_20px_rgba(59,0,120,0.3)] hover:shadow-[0_4px_25px_rgba(59,0,120,0.5)] hover:-translate-y-1 transition-all">Contact Us</Button>
+              </Link>
             </div>
             
 

@@ -12,6 +12,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Calorie Choice - Premium Health-Tech Cloud Kitchen",
   description: "Fresh scientifically-balanced meals designed for fitness, weight management, and healthy lifestyles — delivered across Palakkad.",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({

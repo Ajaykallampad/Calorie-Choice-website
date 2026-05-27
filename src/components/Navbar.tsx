@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { Button } from "./ui/Button";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,8 +18,8 @@ export function Navbar() {
 
   const navLinks = [
     { name: "Meal Plans", href: "#meal-plans" },
-    { name: "Nutrition Hub", href: "#nutrition" },
-    { name: "About", href: "#about" },
+    { name: "Nutrition Calculator", href: "#nutrition-calculator" },
+    { name: "Contact Us", href: "#contact-us" },
   ];
 
   return (
@@ -44,22 +43,18 @@ export function Navbar() {
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className="text-sm font-medium text-foreground hover:text-green-leaf transition-colors"
+                  className="text-sm font-medium text-primary hover:text-green-leaf transition-colors"
                 >
                   {link.name}
                 </Link>
               </li>
             ))}
           </ul>
-          <div className="flex items-center gap-4">
-            <Button variant="secondary" size="sm">Log In</Button>
-            <Button variant="cta" size="sm">Order Now</Button>
-          </div>
         </div>
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden p-2 text-foreground"
+          className="md:hidden p-2 text-primary"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -74,7 +69,7 @@ export function Navbar() {
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className="block px-4 py-2 text-base font-medium text-foreground hover:bg-mint-soft rounded-lg transition-colors"
+                  className="block px-4 py-2 text-base font-medium text-primary hover:bg-mint-soft rounded-lg transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
@@ -82,10 +77,6 @@ export function Navbar() {
               </li>
             ))}
           </ul>
-          <div className="flex flex-col gap-2 pt-4 border-t border-gray-border/50">
-            <Button variant="secondary" className="w-full">Log In</Button>
-            <Button variant="cta" className="w-full">Order Now</Button>
-          </div>
         </div>
       )}
     </nav>

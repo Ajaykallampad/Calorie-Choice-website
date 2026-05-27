@@ -6,7 +6,8 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { MealPlansPreview } from "@/components/sections/MealPlansPreview";
-import { NutritionTeaser } from "@/components/sections/NutritionTeaser";
+import { NutritionIntelligence } from "@/components/sections/NutritionIntelligence";
+import { ContactUs } from "@/components/sections/ContactUs";
 import { Loader } from "@/components/Loader";
 
 export default function Home() {
@@ -22,7 +23,8 @@ export default function Home() {
       <Hero />
       <WhyChooseUs />
       <MealPlansPreview />
-      <NutritionTeaser />
+      <NutritionIntelligence />
+      <ContactUs />
       <Footer />
       </main>
     </>
