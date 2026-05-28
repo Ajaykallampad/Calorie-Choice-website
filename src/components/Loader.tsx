@@ -62,7 +62,7 @@ export function Loader({ onLoadingComplete }: { onLoadingComplete: () => void })
           className="relative z-10 mix-blend-multiply"
         >
           {/* We use a standard img tag here since image optimization is disabled for static export */}
-          <img src="/logo.png" alt="Calorie Choice Logo" className="w-56 h-56 sm:w-72 sm:h-72 object-contain" />
+          <img src="logo.png" alt="Calorie Choice Logo" className="w-56 h-56 sm:w-72 sm:h-72 object-contain" />
         </motion.div>
         
         {/* Loading text removed */}

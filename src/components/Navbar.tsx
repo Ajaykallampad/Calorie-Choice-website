@@ -30,7 +30,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <img src="/logo.png" alt="Calorie Choice Icon" className="h-10 w-auto group-hover:scale-105 transition-transform duration-300 drop-shadow-sm" />
+          <img src="logo.png" alt="Calorie Choice Icon" className="h-10 w-auto group-hover:scale-105 transition-transform duration-300 drop-shadow-sm" />
           <span className="font-heading font-bold text-2xl text-primary tracking-tight hidden sm:block">
             CALORIE <span className="text-green-wellness">CHOICE</span>
           </span>
