@@ -1,7 +1,7 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, MapPin, Send, CheckCircle2, Phone, Loader2 } from "lucide-react";
+import { Mail, MapPin, Send, CheckCircle2, Loader2 } from "lucide-react";
 import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
@@ -23,24 +23,6 @@ const InstagramIcon = ({ className }: { className?: string }) => (
     <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-  </svg>
-);
-
-const BroccoliIcon = ({ className }: { className?: string }) => (
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
-    strokeLinejoin="round" 
-    className={className}
-  >
-    <path d="M12 10v10" />
-    <path d="M12 14a4 4 0 0 0 4-4 3 3 0 0 0-4-2 3 3 0 0 0-4 2 4 4 0 0 0 4 4z" />
-    <path d="M16 10a3 3 0 0 1 3-3 3 3 0 0 0-4-2" />
-    <path d="M8 10a3 3 0 0 0-3-3 3 3 0 0 1 4-2" />
   </svg>
 );
 

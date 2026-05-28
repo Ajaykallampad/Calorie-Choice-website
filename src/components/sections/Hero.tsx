@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "../ui/Button";
 import { NutrientCarousel } from "../ui/NutrientCarousel";
-import { CheckCircle2, ShieldCheck, Star } from "lucide-react";
 
 export function Hero() {
   return (
@@ -41,7 +40,7 @@ export function Hero() {
               </p>
               
               <div className="italic text-gray-800 font-semibold lg:border-l-4 lg:border-green-leaf/50 lg:pl-4 mt-2 lg:mt-0 py-1">
-                "Because great nutrition should taste just as good as it feels."
+                &ldquo;Because great nutrition should taste just as good as it feels.&rdquo;
               </div>
             </div>
             
